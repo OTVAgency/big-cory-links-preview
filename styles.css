@@ -189,3 +189,8 @@ body { isolation: isolate; }
 .card-help summary:focus-visible { outline: 2px solid #4ED7E8; outline-offset: 4px; }
 .card-help p { margin: 8px 0; }
 @media (max-width:700px) { .card-help { margin-left: auto; margin-right: auto; } }
+
+/* The production card keeps one clear contact download beneath the main actions. */
+.contact-save-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; margin-top: 6px; padding: 6px 0; color: #4ED7E8; font-size: 13px; font-weight: 600; }
+.contact-save-link:hover { color: #fff; }
+.contact-save-link:focus-visible { outline: 2px solid #4ED7E8; outline-offset: 4px; }
