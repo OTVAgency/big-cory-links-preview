@@ -18,7 +18,7 @@
   // Remember this browser's choice; blocked/private storage must not break playback.
   try {
     const savedSpeed = Number(window.localStorage.getItem(speedStorageKey));
-    if (savedSpeed >= 0.25 && savedSpeed <= 1) speed = savedSpeed;
+    if (savedSpeed >= 0.25 && savedSpeed <= 4) speed = savedSpeed;
   } catch { /* Keep the gentle default when storage is unavailable. */ }
 
   function updateSpeed() {
@@ -99,7 +99,7 @@
   });
   speedInput?.addEventListener('input', () => {
     const value = Number(speedInput.value);
-    if (!Number.isFinite(value) || value < 0.25 || value > 1) return;
+    if (!Number.isFinite(value) || value < 0.25 || value > 4) return;
     speed = value;
     updateSpeed();
     try { window.localStorage.setItem(speedStorageKey, String(speed)); }

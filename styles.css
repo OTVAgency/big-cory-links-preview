@@ -42,7 +42,7 @@ h2 { font-size:23px; font-weight:700; letter-spacing:-.7px; line-height:1.2; mar
 .social-link { min-height:82px; padding:16px 14px; display:flex; align-items:center; gap:12px; background:var(--panel); border:1px solid var(--line); border-radius:10px; transition:border-color .16s, background .16s; }
 .social-link > span { flex:1; min-width:0; }
 .social-link strong { display:block; font-size:14px; line-height:1.35; }
-.social-link small { display:block; color:var(--muted); font-size:11px; line-height:1.4; margin-top:4px; }
+.social-link small { display:block; color:var(--muted); font-size:13px; line-height:1.4; margin-top:4px; }
 .social-link > .icon:last-child { width:14px; height:14px; color:var(--muted); }
 .social-link:hover, .project-link:hover { background:#20252A; border-color:var(--cyan); }
 .featured { margin-top:38px; }
@@ -98,7 +98,7 @@ footer a { color:var(--white); }
   .social-link > .icon:first-child { width:21px; height:21px; }
   .social-link > .icon:last-child { width:12px; height:12px; }
   .social-link strong { font-size:13px; }
-  .social-link small { font-size:10px; }
+  .social-link small { font-size:12px; }
   .featured { margin-top:30px; }
   .feature-copy { padding:20px; }
   .feature-copy h3 { font-size:22px; }
