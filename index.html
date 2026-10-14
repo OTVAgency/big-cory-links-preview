@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- The studio is decorative. A still image works without JavaScript or video. -->
+  <div class="studio-backdrop" aria-hidden="true">
+    <picture><source media="(max-width: 700px)" srcset="rendering-background-mobile.jpg"><img src="rendering-background.jpg" alt="" width="960" height="540"></picture>
+    <video id="studio-video" muted playsinline preload="none" tabindex="-1" data-desktop="rendering-background.mp4" data-mobile="rendering-background-mobile.mp4"></video>
+  </div>
   <a class="skip-link" href="#links">Skip to my links</a>
   <!-- Symbols are decorative: every destination has a visible text label. -->
   <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -32,7 +37,10 @@
   <div class="page-shell">
     <header class="topbar">
       <a class="wordmark" href="#top" aria-label="Big Cory, back to top">BC<span>.</span></a>
+      <div class="topbar-actions">
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-pressed="true" hidden>Motion on</button>
       <a class="top-cta" href="#work">Work with me <span aria-hidden="true">↗</span></a>
+      </div>
     </header>
     <main id="top" class="hub">
       <section class="identity" aria-labelledby="name">
@@ -89,5 +97,6 @@
     </main>
     <footer><span>Cory Crawford · Big Cory</span><span>Built with <a href="https://otv.agency/">OTV Agency</a></span></footer>
   </div>
+  <script src="background.js" defer></script>
 </body>
 </html>
